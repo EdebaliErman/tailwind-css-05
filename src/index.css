@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html,body{
+    @apply  w-full  h-full flex justify-center items-center  text-text bg-gradient-to-br from-blue  to-text
+   }
+   
+    .App {
+        @apply flex justify-center items-center
+    }
+    .Card{
+        @apply shadow-3xl p-3 w-[500px] h-[300px] rounded-xl transition-all duration-500 ease-linear relative 
+    }
+    .Card h1{
+    @apply font-bold font-mono text-3xl hover:scale-110 transition-all duration-200 ease-linear mt-16 
+    }
+    .Card p{
+        @apply font-bold font-sans  transition-all duration-200 ease-linear hover:text-hovercolor italic mt-5
+    }
+    .card-contents{
+        @apply flex justify-center items-center gap-4 
+    }
+    .card-contents button{
+        @apply bg-gradient-to-tr from-bg to-text pl-5 pr-5 p-1 rounded-full font-bold font-mono mt-4 absolute right-12 shadow-inner shadow-bg text-black hover:scale-110 duration-100 ease-linear 
+    }
+    .card-contents img {
+        @apply w-48 rounded-2xl hover:scale-110 transition-all duration-200 ease-linear shadow-3xl shadow-bg
+    }
+    .colorChange{
+        @apply w-max  p-1 rounded-full flex justify-center items-center gap-3 right-0 absolute m-3
+    }
+    .sectionColor{
+        @apply relative flex items-center justify-center  hover:rounded-xl rounded-3xl transition-all duration-300 ease-linear w-5 h-5 cursor-pointer shadow-3xl hover:animate-bounce mb-2
+    }
+    .tooltip{
+        @apply absolute w-max font-bold p-2 m-2 bottom-5 transition-all duration-100 scale-0 origin-bottom rounded-md shadow-md text-text 
+    }
+}
